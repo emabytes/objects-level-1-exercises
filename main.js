@@ -265,14 +265,10 @@ var studentData = [
 
 function showUserData(students) {
   students.forEach(x => {
-    console.log(x.name)
-    console.log(x.coop)
-    console.log(x.city)
-    console.log(x.emails)
-    document.getElementById("student-data").innerHTML += x.name + "<br>";
-    document.getElementById("student-data").innerHTML += x.coop + "<br>";
-    document.getElementById("student-data").innerHTML += x.city + "<br>";
-    document.getElementById("student-data").innerHTML += x.emails + "<br>";
+    document.getElementById("student-data").innerHTML += "Name: " + x.name + "<br>";
+    document.getElementById("student-data").innerHTML += "Coop: " + x.coop + "<br>";
+    document.getElementById("student-data").innerHTML += "Address: " + x.address.city + "<br>";
+    document.getElementById("student-data").innerHTML += "Email: " + x.emails + "<br><br>";
   })
 }
 showUserData(studentData);
